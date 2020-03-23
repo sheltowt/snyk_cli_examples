@@ -1,0 +1,54 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  SNYK-JS-MINIMIST-559764:
+    - tap > nyc > istanbul > handlebars > optimist > minimist:
+        reason: None given
+        expires: '2020-04-22T16:01:52.530Z'
+  'npm:ejs:20161128':
+    - ejs-locals > ejs:
+        reason: None given
+        expires: '2020-04-22T16:01:52.530Z'
+  'npm:ejs:20161130':
+    - ejs-locals > ejs:
+        reason: None given
+        expires: '2020-04-22T16:01:52.530Z'
+  'npm:ejs:20161130-1':
+    - ejs-locals > ejs:
+        reason: None given
+        expires: '2020-04-22T16:01:52.530Z'
+  'npm:hoek:20180212':
+    - tap > codecov.io > request > hawk > hoek:
+        reason: None given
+        expires: '2020-04-22T16:01:52.530Z'
+    - tap > codecov.io > request > hawk > boom > hoek:
+        reason: None given
+        expires: '2020-04-22T16:01:52.530Z'
+    - tap > codecov.io > request > hawk > sntp > hoek:
+        reason: None given
+        expires: '2020-04-22T16:01:52.530Z'
+    - tap > codecov.io > request > hawk > cryptiles > boom > hoek:
+        reason: None given
+        expires: '2020-04-22T16:01:52.530Z'
+  'npm:qs:20170213':
+    - tap > codecov.io > request > qs:
+        reason: None given
+        expires: '2020-04-22T16:01:52.530Z'
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hawk:20160119':
+    - tap > codecov.io > request > hawk:
+        patched: '2020-03-23T16:01:26.993Z'
+  'npm:http-signature:20150122':
+    - tap > codecov.io > request > http-signature:
+        patched: '2020-03-23T16:01:26.993Z'
+  'npm:mime:20170907':
+    - tap > codecov.io > request > form-data > mime:
+        patched: '2020-03-23T16:01:26.993Z'
+  'npm:request:20160119':
+    - tap > codecov.io > request:
+        patched: '2020-03-23T16:01:26.993Z'
+  'npm:tunnel-agent:20170305':
+    - tap > codecov.io > request > tunnel-agent:
+        patched: '2020-03-23T16:01:26.993Z'
