@@ -35,20 +35,4 @@ ignore:
     - tap > codecov.io > request > qs:
         reason: None given
         expires: '2020-04-22T15:57:28.419Z'
-# patches apply the minimum changes required to fix a vulnerability
-patch:
-  'npm:hawk:20160119':
-    - tap > codecov.io > request > hawk:
-        patched: '2020-03-23T15:56:43.475Z'
-  'npm:http-signature:20150122':
-    - tap > codecov.io > request > http-signature:
-        patched: '2020-03-23T15:56:43.475Z'
-  'npm:mime:20170907':
-    - tap > codecov.io > request > form-data > mime:
-        patched: '2020-03-23T15:56:43.475Z'
-  'npm:request:20160119':
-    - tap > codecov.io > request:
-        patched: '2020-03-23T15:56:43.475Z'
-  'npm:tunnel-agent:20170305':
-    - tap > codecov.io > request > tunnel-agent:
-        patched: '2020-03-23T15:56:43.475Z'
+patch: {}
